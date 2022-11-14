@@ -1,0 +1,135 @@
+--==============================================================================
+--==                                                                          ==
+--== Project   : CPU_16bit                                                    ==
+--== Component : AddOpSub_16bit_VHDL                                          ==
+--== Notes		: "Subtraction when ADD_SUB is 1. A and B are unsigned,        ==
+--==             the result can be signed when subtraction is invoked."       ==
+--==                                                                          ==
+--==============================================================================
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+LIBRARY work;
+
+ENTITY AddOpSub_16bit_VHDL IS
+	PORT
+		(
+			ADD_SUB 	:  IN  STD_LOGIC;
+			A 		 	:  IN  STD_LOGIC_VECTOR(15 DOWNTO 0);
+			B 			:  IN  STD_LOGIC_VECTOR(15 DOWNTO 0);
+			S 			:  OUT  STD_LOGIC_VECTOR(15 DOWNTO 0);
+			C_OUT	   :  OUT  STD_LOGIC
+		);
+END AddOpSub_16bit_VHDL;
+
+
+ARCHITECTURE bhv_add16 OF AddOpSub_16bit_VHDL IS 
+
+   -----------------------------------------------------------------------------
+   -- Here all used components are defined                                    --
+   -----------------------------------------------------------------------------
+	
+	COMPONENT Adder_4bit_VHDL
+		PORT
+			(
+				C_IN   :  IN  STD_LOGIC;
+				A 	    :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+				B      :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
+				S      :  OUT  STD_LOGIC_VECTOR(3 DOWNTO 0);
+				C_OUT  :  OUT  STD_LOGIC
+			);
+	END COMPONENT;
+	
+--------------------------------------------------------------------------------
+-- All used signals are defined here (lowercase)                              --
+--------------------------------------------------------------------------------
+SIGNAL	C0_3, C4_7, C8_11, C12_15					: STD_LOGIC;
+SIGNAL	B15, B14, B13, B12, B11, B10, B9, B8 	: STD_LOGIC;
+SIGNAL 	B7, B6, B5, B4, B3, B2, B1, B0			: STD_LOGIC;
+
+	BEGIN
+
+   --------------------------------------------------------------------------------
+   -- Here all input connections are defined                                     --
+   --------------------------------------------------------------------------------
+	B0 	<= B(0) XOR ADD_SUB;
+	B1 	<= B(1) XOR ADD_SUB;
+	B2	 	<= B(2) XOR ADD_SUB;
+	B3 	<= B(3) XOR ADD_SUB;
+	B4 	<= B(4) XOR ADD_SUB;
+	B5 	<= B(5) XOR ADD_SUB;
+	B6	 	<= B(6) XOR ADD_SUB;
+	B7 	<= B(7) XOR ADD_SUB;
+	B8 	<= B(8) XOR ADD_SUB;
+	B9 	<= B(9) XOR ADD_SUB;
+	B10 	<= B(10) XOR ADD_SUB;
+	B11 	<= B(11) XOR ADD_SUB;
+	B12 	<= B(12) XOR ADD_SUB;
+	B13 	<= B(13) XOR ADD_SUB;
+	B14 	<= B(14) XOR ADD_SUB;
+	B15 	<= B(15) XOR ADD_SUB;
+	
+   --------------------------------------------------------------------------------
+   -- Here all output connections are defined                                    --
+   --------------------------------------------------------------------------------
+		-- n/a
+	
+   --------------------------------------------------------------------------------
+   -- Here all normal components are defined                                     --
+   --------------------------------------------------------------------------------
+	add0bit_0_3 : Adder_4bit_VHDL
+	PORT MAP
+		(
+			A(3 DOWNTO 0) => A(3 DOWNTO 0),
+			B(3)          => B3,
+			B(2)          => B2,
+			B(1)          => B1,
+			B(0)          => B0,
+			C_IN          => ADD_SUB,
+			S(3 DOWNTO 0) => S(3 DOWNTO 0),
+			C_OUT         => C0_3
+		);
+		
+	add0bit_4_7 : Adder_4bit_VHDL
+	PORT MAP
+		(
+			A(3 DOWNTO 0) => A(7 DOWNTO 4),
+			B(3) 	      => B7,
+			B(2) 	      => B6,
+			B(1) 	      => B5,
+			B(0) 	      => B4,
+			C_IN          => C0_3,
+			S(3 DOWNTO 0) => S(7 DOWNTO 4),
+			C_OUT         => C4_7
+		);
+		
+	add0bit_8_11 : Adder_4bit_VHDL
+	PORT MAP
+		(
+			A(3 DOWNTO 0) => A(11 DOWNTO 8),
+			B(3) 	      => B11,
+			B(2) 	      => B10,
+			B(1) 	      => B9,
+			B(0) 	      => B8,
+			C_IN          => C4_7,
+			S(3 DOWNTO 0) => S(11 DOWNTO 8),
+			C_OUT         => C8_11
+		);		 
+
+	add0bit_12_15 : Adder_4bit_VHDL
+	PORT MAP
+		(
+			A(3 DOWNTO 0) => A(15 DOWNTO 12),
+			B(3) 	      => B15,
+			B(2) 	      => B14,
+			B(1) 	      => B13,
+			B(0) 	      => B12,
+			C_IN          => C8_11,
+			S(3 DOWNTO 0) => S(15 DOWNTO 12),
+			C_OUT         => C12_15
+		);
+
+C_OUT <= C12_15;
+
+END bhv_add16;

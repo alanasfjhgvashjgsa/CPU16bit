@@ -1,0 +1,6 @@
+DATE = "00:43:40 October 28, 2022"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "CPU_16bit"

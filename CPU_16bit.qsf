@@ -1,0 +1,476 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "MAX 10 FPGA"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "16.0.0"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:43:40 OCTOBER 28,2022"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_N5 -to ADC_CLK_10 -disable
+set_location_assignment PIN_P11 -to MAX10_CLK1_50 -disable
+set_location_assignment PIN_N14 -to MAX10_CLK2_50 -disable
+
+#============================================================
+# SDRAM
+#============================================================
+set_location_assignment PIN_U17 -to DRAM_ADDR[0] -disable
+set_location_assignment PIN_W19 -to DRAM_ADDR[1] -disable
+set_location_assignment PIN_V18 -to DRAM_ADDR[2] -disable
+set_location_assignment PIN_U18 -to DRAM_ADDR[3] -disable
+set_location_assignment PIN_U19 -to DRAM_ADDR[4] -disable
+set_location_assignment PIN_T18 -to DRAM_ADDR[5] -disable
+set_location_assignment PIN_T19 -to DRAM_ADDR[6] -disable
+set_location_assignment PIN_R18 -to DRAM_ADDR[7] -disable
+set_location_assignment PIN_P18 -to DRAM_ADDR[8] -disable
+set_location_assignment PIN_P19 -to DRAM_ADDR[9] -disable
+set_location_assignment PIN_T20 -to DRAM_ADDR[10] -disable
+set_location_assignment PIN_P20 -to DRAM_ADDR[11] -disable
+set_location_assignment PIN_R20 -to DRAM_ADDR[12] -disable
+set_location_assignment PIN_T21 -to DRAM_BA[0] -disable
+set_location_assignment PIN_T22 -to DRAM_BA[1] -disable
+set_location_assignment PIN_U21 -to DRAM_CAS_N -disable
+set_location_assignment PIN_N22 -to DRAM_CKE -disable
+set_location_assignment PIN_L14 -to DRAM_CLK -disable
+set_location_assignment PIN_U20 -to DRAM_CS_N -disable
+set_location_assignment PIN_Y21 -to DRAM_DQ[0] -disable
+set_location_assignment PIN_Y20 -to DRAM_DQ[1] -disable
+set_location_assignment PIN_AA22 -to DRAM_DQ[2] -disable
+set_location_assignment PIN_AA21 -to DRAM_DQ[3] -disable
+set_location_assignment PIN_Y22 -to DRAM_DQ[4] -disable
+set_location_assignment PIN_W22 -to DRAM_DQ[5] -disable
+set_location_assignment PIN_W20 -to DRAM_DQ[6] -disable
+set_location_assignment PIN_V21 -to DRAM_DQ[7] -disable
+set_location_assignment PIN_P21 -to DRAM_DQ[8] -disable
+set_location_assignment PIN_J22 -to DRAM_DQ[9] -disable
+set_location_assignment PIN_H21 -to DRAM_DQ[10] -disable
+set_location_assignment PIN_H22 -to DRAM_DQ[11] -disable
+set_location_assignment PIN_G22 -to DRAM_DQ[12] -disable
+set_location_assignment PIN_G20 -to DRAM_DQ[13] -disable
+set_location_assignment PIN_G19 -to DRAM_DQ[14] -disable
+set_location_assignment PIN_F22 -to DRAM_DQ[15] -disable
+set_location_assignment PIN_V22 -to DRAM_LDQM -disable
+set_location_assignment PIN_U22 -to DRAM_RAS_N -disable
+set_location_assignment PIN_J21 -to DRAM_UDQM -disable
+set_location_assignment PIN_V20 -to DRAM_WE_N -disable
+
+#============================================================
+# SEG7
+#============================================================
+set_location_assignment PIN_C14 -to HEX0[0] -disable
+set_location_assignment PIN_E15 -to HEX0[1] -disable
+set_location_assignment PIN_C15 -to HEX0[2] -disable
+set_location_assignment PIN_C16 -to HEX0[3] -disable
+set_location_assignment PIN_E16 -to HEX0[4] -disable
+set_location_assignment PIN_D17 -to HEX0[5] -disable
+set_location_assignment PIN_C17 -to HEX0[6] -disable
+set_location_assignment PIN_D15 -to HEX0[7] -disable
+set_location_assignment PIN_C18 -to HEX1[0] -disable
+set_location_assignment PIN_D18 -to HEX1[1] -disable
+set_location_assignment PIN_E18 -to HEX1[2] -disable
+set_location_assignment PIN_B16 -to HEX1[3] -disable
+set_location_assignment PIN_A17 -to HEX1[4] -disable
+set_location_assignment PIN_A18 -to HEX1[5] -disable
+set_location_assignment PIN_B17 -to HEX1[6] -disable
+set_location_assignment PIN_A16 -to HEX1[7] -disable
+set_location_assignment PIN_B20 -to HEX2[0] -disable
+set_location_assignment PIN_A20 -to HEX2[1] -disable
+set_location_assignment PIN_B19 -to HEX2[2] -disable
+set_location_assignment PIN_A21 -to HEX2[3] -disable
+set_location_assignment PIN_B21 -to HEX2[4] -disable
+set_location_assignment PIN_C22 -to HEX2[5] -disable
+set_location_assignment PIN_B22 -to HEX2[6] -disable
+set_location_assignment PIN_A19 -to HEX2[7] -disable
+set_location_assignment PIN_F21 -to HEX3[0] -disable
+set_location_assignment PIN_E22 -to HEX3[1] -disable
+set_location_assignment PIN_E21 -to HEX3[2] -disable
+set_location_assignment PIN_C19 -to HEX3[3] -disable
+set_location_assignment PIN_C20 -to HEX3[4] -disable
+set_location_assignment PIN_D19 -to HEX3[5] -disable
+set_location_assignment PIN_E17 -to HEX3[6] -disable
+set_location_assignment PIN_D22 -to HEX3[7] -disable
+set_location_assignment PIN_F18 -to HEX4[0] -disable
+set_location_assignment PIN_E20 -to HEX4[1] -disable
+set_location_assignment PIN_E19 -to HEX4[2] -disable
+set_location_assignment PIN_J18 -to HEX4[3] -disable
+set_location_assignment PIN_H19 -to HEX4[4] -disable
+set_location_assignment PIN_F19 -to HEX4[5] -disable
+set_location_assignment PIN_F20 -to HEX4[6] -disable
+set_location_assignment PIN_F17 -to HEX4[7] -disable
+set_location_assignment PIN_J20 -to HEX5[0] -disable
+set_location_assignment PIN_K20 -to HEX5[1] -disable
+set_location_assignment PIN_L18 -to HEX5[2] -disable
+set_location_assignment PIN_N18 -to HEX5[3] -disable
+set_location_assignment PIN_M20 -to HEX5[4] -disable
+set_location_assignment PIN_N19 -to HEX5[5] -disable
+set_location_assignment PIN_N20 -to HEX5[6] -disable
+set_location_assignment PIN_L19 -to HEX5[7] -disable
+
+#============================================================
+# KEY
+#============================================================
+set_location_assignment PIN_B8 -to KEY[0] -disable
+set_location_assignment PIN_A7 -to KEY[1] -disable
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A8 -to LEDR[0] -disable
+set_location_assignment PIN_A9 -to LEDR[1] -disable
+set_location_assignment PIN_A10 -to LEDR[2] -disable
+set_location_assignment PIN_B10 -to LEDR[3] -disable
+set_location_assignment PIN_D13 -to LEDR[4] -disable
+set_location_assignment PIN_C13 -to LEDR[5] -disable
+set_location_assignment PIN_E14 -to LEDR[6] -disable
+set_location_assignment PIN_D14 -to LEDR[7] -disable
+set_location_assignment PIN_A11 -to LEDR[8] -disable
+set_location_assignment PIN_B11 -to LEDR[9] -disable
+
+#============================================================
+# SW
+#============================================================
+set_location_assignment PIN_C10 -to SW[0] -disable
+set_location_assignment PIN_C11 -to SW[1] -disable
+set_location_assignment PIN_D12 -to SW[2] -disable
+set_location_assignment PIN_C12 -to SW[3] -disable
+set_location_assignment PIN_A12 -to SW[4] -disable
+set_location_assignment PIN_B12 -to SW[5] -disable
+set_location_assignment PIN_A13 -to SW[6] -disable
+set_location_assignment PIN_A14 -to SW[7] -disable
+set_location_assignment PIN_B14 -to SW[8] -disable
+set_location_assignment PIN_F15 -to SW[9] -disable
+
+#============================================================
+# VGA
+#============================================================
+set_location_assignment PIN_P1 -to VGA_B[0] -disable
+set_location_assignment PIN_T1 -to VGA_B[1] -disable
+set_location_assignment PIN_P4 -to VGA_B[2] -disable
+set_location_assignment PIN_N2 -to VGA_B[3] -disable
+set_location_assignment PIN_W1 -to VGA_G[0] -disable
+set_location_assignment PIN_T2 -to VGA_G[1] -disable
+set_location_assignment PIN_R2 -to VGA_G[2] -disable
+set_location_assignment PIN_R1 -to VGA_G[3] -disable
+set_location_assignment PIN_N3 -to VGA_HS -disable
+set_location_assignment PIN_AA1 -to VGA_R[0] -disable
+set_location_assignment PIN_V1 -to VGA_R[1] -disable
+set_location_assignment PIN_Y2 -to VGA_R[2] -disable
+set_location_assignment PIN_Y1 -to VGA_R[3] -disable
+set_location_assignment PIN_N1 -to VGA_VS -disable
+
+#============================================================
+# Accelerometer
+#============================================================
+set_location_assignment PIN_AB16 -to GSENSOR_CS_N -disable
+set_location_assignment PIN_Y14 -to GSENSOR_INT[1] -disable
+set_location_assignment PIN_Y13 -to GSENSOR_INT[2] -disable
+set_location_assignment PIN_AB15 -to GSENSOR_SCLK -disable
+set_location_assignment PIN_V11 -to GSENSOR_SDI -disable
+set_location_assignment PIN_V12 -to GSENSOR_SDO -disable
+
+#============================================================
+# Arduino
+#============================================================
+set_location_assignment PIN_AB5 -to ARDUINO_IO[0] -disable
+set_location_assignment PIN_AB6 -to ARDUINO_IO[1] -disable
+set_location_assignment PIN_AB7 -to ARDUINO_IO[2] -disable
+set_location_assignment PIN_AB8 -to ARDUINO_IO[3] -disable
+set_location_assignment PIN_AB9 -to ARDUINO_IO[4] -disable
+set_location_assignment PIN_Y10 -to ARDUINO_IO[5] -disable
+set_location_assignment PIN_AA11 -to ARDUINO_IO[6] -disable
+set_location_assignment PIN_AA12 -to ARDUINO_IO[7] -disable
+set_location_assignment PIN_AB17 -to ARDUINO_IO[8] -disable
+set_location_assignment PIN_AA17 -to ARDUINO_IO[9] -disable
+set_location_assignment PIN_AB19 -to ARDUINO_IO[10] -disable
+set_location_assignment PIN_AA19 -to ARDUINO_IO[11] -disable
+set_location_assignment PIN_Y19 -to ARDUINO_IO[12] -disable
+set_location_assignment PIN_AB20 -to ARDUINO_IO[13] -disable
+set_location_assignment PIN_AB21 -to ARDUINO_IO[14] -disable
+set_location_assignment PIN_AA20 -to ARDUINO_IO[15] -disable
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_FILE Buffer_4bit_VHDL.vhd
+set_global_assignment -name SDC_FILE CPU_16bit.sdc
+set_global_assignment -name VERILOG_FILE CPU_16bit.v
+set_global_assignment -name VHDL_FILE AddOpSub_16bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE Adder_4bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE Adder_1bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE dff_VHDL.vhd
+set_global_assignment -name BDF_FILE Register_1bit.bdf
+set_global_assignment -name VHDL_FILE Register_1bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE Register_4bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE BufferedRegister_4bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE BufferedRegister_16bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE Register_Flag_VHDL.vhd
+set_global_assignment -name VHDL_FILE Buffer_16bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE ALU_16bit_VHDL.vhd
+set_global_assignment -name BDF_FILE Decoder_2to4.bdf
+set_global_assignment -name BDF_FILE Decoder_4to16.bdf
+set_global_assignment -name BDF_FILE mux_2to1.bdf
+set_global_assignment -name BDF_FILE mux_2to1_4bit.bdf
+set_global_assignment -name BDF_FILE mux_4to1_4bit.bdf
+set_global_assignment -name VHDL_FILE mux4to1_4bit_VHDL.vhd
+set_global_assignment -name VHDL_FILE mux16to1_4bit_VHDL.vhd
+set_global_assignment -name BDF_FILE SynchUpCount_4bit.bdf
+set_global_assignment -name ALLOW_REGISTER_MERGING OFF
+set_global_assignment -name ALLOW_REGISTER_DUPLICATION OFF
+set_global_assignment -name AUTO_MERGE_PLLS OFF
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING OFF
+set_global_assignment -name AUTO_DELAY_CHAINS OFF
+set_global_assignment -name IO_PLACEMENT_OPTIMIZATION OFF
+set_global_assignment -name AUTO_GLOBAL_CLOCK OFF
+set_global_assignment -name AUTO_GLOBAL_REGISTER_CONTROLS OFF
+set_global_assignment -name ENABLE_BENEFICIAL_SKEW_OPTIMIZATION OFF
+set_global_assignment -name OPTIMIZE_FOR_METASTABILITY OFF
+set_global_assignment -name BDF_FILE PC_4bit.bdf
+set_global_assignment -name BDF_FILE MemAddrReg_4bit.bdf
+set_global_assignment -name BDF_FILE ram_module16_4bit.bdf
+set_global_assignment -name BDF_FILE ram_16bit.bdf
+set_global_assignment -name BDF_FILE InstrReg16_4bit.bdf
+set_global_assignment -name VHDL_FILE BCD_to_7seg_VHDL.vhd
+set_global_assignment -name VHDL_FILE ControlUnit_16bit_VHDL.vhd
+set_global_assignment -name BDF_FILE SynchUpCount_NOLOAD_4bit.bdf
+set_global_assignment -name BDF_FILE ram_programmer_16bit.bdf
+set_global_assignment -name BDF_FILE DataInput_8switches16bits.bdf
+set_global_assignment -name BDF_FILE AB_Reg_16bit.bdf
+set_global_assignment -name BDF_FILE OutputReg_16bit.bdf
+set_global_assignment -name BDF_FILE CPU.bdf
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC_CLK_10 -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CLK1_50 -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to MAX10_CLK2_50 -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[8] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[9] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[10] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[11] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_ADDR[12] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_BA[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CAS_N -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CKE -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CLK -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_CS_N -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[8] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[9] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[10] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[11] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[12] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[13] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[14] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_DQ[15] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_LDQM -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_RAS_N -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_UDQM -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DRAM_WE_N -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX0[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX1[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX2[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX3[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX4[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX5[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[8] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW[9] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_B[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_G[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_HS -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_R[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to VGA_VS -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_CS_N -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_INT[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_INT[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_SCLK -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_SDI -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GSENSOR_SDO -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[0] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[1] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[2] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[3] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[4] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[5] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[6] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[7] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[8] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[9] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[10] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[11] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[12] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[13] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[14] -disable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ARDUINO_IO[15] -disable
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to ARDUINO_RESET_N -disable
+set_instance_assignment -name POWER_UP_LEVEL HIGH -to PULLPIN_HIGH -comment "CPU test"
+set_location_assignment PIN_F15 -to RESET -comment "CPU test"
+set_location_assignment PIN_A12 -to SEL3_0 -comment "CPU test"
+set_location_assignment PIN_B12 -to SEL7_4 -comment "CPU test"
+set_location_assignment PIN_A13 -to SEL11_8 -comment "CPU test"
+set_location_assignment PIN_A14 -to SEL15_12 -comment "CPU test"
+set_location_assignment PIN_A7 -to STEP -comment "CPU test"
+set_location_assignment PIN_D13 -to ZF -disable -comment "CPU test"
+set_location_assignment PIN_C13 -to CF -disable -comment "CPU test"
+set_location_assignment PIN_C17 -to HEX_DIGIT_0[0] -comment "CPU test"
+set_location_assignment PIN_D17 -to HEX_DIGIT_0[1] -comment "CPU test"
+set_location_assignment PIN_E16 -to HEX_DIGIT_0[2] -comment "CPU test"
+set_location_assignment PIN_C16 -to HEX_DIGIT_0[3] -comment "CPU test"
+set_location_assignment PIN_C15 -to HEX_DIGIT_0[4] -comment "CPU test"
+set_location_assignment PIN_E15 -to HEX_DIGIT_0[5] -comment "CPU test"
+set_location_assignment PIN_C14 -to HEX_DIGIT_0[6] -comment "CPU test"
+set_location_assignment PIN_B17 -to HEX_DIGIT_1[0] -comment "CPU test"
+set_location_assignment PIN_A18 -to HEX_DIGIT_1[1] -comment "CPU test"
+set_location_assignment PIN_A17 -to HEX_DIGIT_1[2] -comment "CPU test"
+set_location_assignment PIN_B16 -to HEX_DIGIT_1[3] -comment "CPU test"
+set_location_assignment PIN_E18 -to HEX_DIGIT_1[4] -comment "CPU test"
+set_location_assignment PIN_D18 -to HEX_DIGIT_1[5] -comment "CPU test"
+set_location_assignment PIN_C18 -to HEX_DIGIT_1[6] -comment "CPU test"
+set_location_assignment PIN_B22 -to HEX_DIGIT_2[0] -comment "CPU test"
+set_location_assignment PIN_C22 -to HEX_DIGIT_2[1] -comment "CPU test"
+set_location_assignment PIN_B21 -to HEX_DIGIT_2[2] -comment "CPU test"
+set_location_assignment PIN_A21 -to HEX_DIGIT_2[3] -comment "CPU test"
+set_location_assignment PIN_B19 -to HEX_DIGIT_2[4] -comment "CPU test"
+set_location_assignment PIN_A20 -to HEX_DIGIT_2[5] -comment "CPU test"
+set_location_assignment PIN_B20 -to HEX_DIGIT_2[6] -comment "CPU test"
+set_location_assignment PIN_E17 -to HEX_DIGIT_3[0] -comment "CPU test"
+set_location_assignment PIN_D19 -to HEX_DIGIT_3[1] -comment "CPU test"
+set_location_assignment PIN_C20 -to HEX_DIGIT_3[2] -comment "CPU test"
+set_location_assignment PIN_C19 -to HEX_DIGIT_3[3] -comment "CPU test"
+set_location_assignment PIN_E21 -to HEX_DIGIT_3[4] -comment "CPU test"
+set_location_assignment PIN_E22 -to HEX_DIGIT_3[5] -comment "CPU test"
+set_location_assignment PIN_F21 -to HEX_DIGIT_3[6] -comment "CPU test"
+set_location_assignment PIN_C10 -to INSTRUCTION_DATA_IN[0] -comment "CPU test"
+set_location_assignment PIN_C11 -to INSTRUCTION_DATA_IN[1] -comment "CPU test"
+set_location_assignment PIN_D12 -to INSTRUCTION_DATA_IN[2] -comment "CPU test"
+set_location_assignment PIN_C12 -to INSTRUCTION_DATA_IN[3] -comment "CPU test"
+set_location_assignment PIN_B8 -to COMMIT -comment "CPU test"
+set_location_assignment PIN_C11 -to BCD_IN[1] -disable -comment "display test"
+set_location_assignment PIN_D12 -to BCD_IN[2] -disable -comment "display test"
+set_location_assignment PIN_C12 -to BCD_IN[3] -disable -comment "display test"
+set_location_assignment PIN_C17 -to SEG_OUT[0] -disable -comment "display test"
+set_location_assignment PIN_D17 -to SEG_OUT[1] -disable -comment "display test"
+set_location_assignment PIN_E16 -to SEG_OUT[2] -disable -comment "display test"
+set_location_assignment PIN_C16 -to SEG_OUT[3] -disable -comment "display test"
+set_location_assignment PIN_C15 -to SEG_OUT[4] -disable -comment "display test"
+set_location_assignment PIN_E15 -to SEG_OUT[5] -disable -comment "display test"
+set_location_assignment PIN_C14 -to SEG_OUT[6] -disable -comment "display test"
+set_location_assignment PIN_C10 -to BCD_IN[0] -disable -comment "display test"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_A10 -to BUS_DATA[13] -comment "CPU test"
+set_location_assignment PIN_A9 -to BUS_DATA[14] -comment "CPU test"
+set_location_assignment PIN_A8 -to BUS_DATA[15] -comment "CPU test"
+set_location_assignment PIN_D13 -to BUS_DATA[3] -comment "CPU test"
+set_location_assignment PIN_C13 -to BUS_DATA[2] -comment "CPU test"
+set_location_assignment PIN_E14 -to BUS_DATA[1] -comment "CPU test"
+set_location_assignment PIN_D14 -to BUS_DATA[0] -comment "CPU test"
+set_location_assignment PIN_B10 -to BUS_DATA[12] -comment "CPU test"
+set_location_assignment PIN_B14 -to PROG_RAM -comment "CPU test"
+set_instance_assignment -name GLOBAL_SIGNAL GLOBAL_CLOCK -to CLK -comment "CPU test"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

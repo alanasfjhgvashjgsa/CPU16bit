@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'PROG_RAM'
+Slack : -11.162
+TNS   : -633.836
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -11.028
+TNS   : -822.651
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : -0.160
+TNS   : -0.160
+
+Type  : Slow 1200mV 85C Model Hold 'PROG_RAM'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'PROG_RAM'
+Slack : -2.522
+TNS   : -134.928
+
+Type  : Slow 1200mV 85C Model Recovery 'CLK'
+Slack : -1.790
+TNS   : -25.436
+
+Type  : Slow 1200mV 85C Model Removal 'PROG_RAM'
+Slack : 0.674
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CLK'
+Slack : 0.977
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PROG_RAM'
+Slack : -3.000
+TNS   : -172.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -162.942
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -10.229
+TNS   : -761.007
+
+Type  : Slow 1200mV 0C Model Setup 'PROG_RAM'
+Slack : -10.220
+TNS   : -579.006
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : -0.229
+TNS   : -0.257
+
+Type  : Slow 1200mV 0C Model Hold 'PROG_RAM'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'PROG_RAM'
+Slack : -2.297
+TNS   : -111.213
+
+Type  : Slow 1200mV 0C Model Recovery 'CLK'
+Slack : -1.503
+TNS   : -20.904
+
+Type  : Slow 1200mV 0C Model Removal 'PROG_RAM'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'CLK'
+Slack : 0.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PROG_RAM'
+Slack : -3.000
+TNS   : -169.021
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -162.942
+
+Type  : Fast 1200mV 0C Model Setup 'PROG_RAM'
+Slack : -4.763
+TNS   : -267.198
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -4.405
+TNS   : -329.401
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : -0.074
+TNS   : -0.127
+
+Type  : Fast 1200mV 0C Model Hold 'PROG_RAM'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'PROG_RAM'
+Slack : -1.454
+TNS   : -77.681
+
+Type  : Fast 1200mV 0C Model Recovery 'CLK'
+Slack : -0.964
+TNS   : -13.896
+
+Type  : Fast 1200mV 0C Model Removal 'CLK'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'PROG_RAM'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PROG_RAM'
+Slack : -3.000
+TNS   : -137.468
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -123.279
+
+------------------------------------------------------------

@@ -1,0 +1,25 @@
+D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/Adder_4bit_VHDL.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/Adder_4bit_VHDL.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder_4bit_VHDL
+-- Compiling architecture bhv_add4 of Adder_4bit_VHDL
+
+} {} {}} D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/AddOpSub_16bit_VHDL.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/AddOpSub_16bit_VHDL.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AddOpSub_16bit_VHDL
+-- Compiling architecture bhv_add16 of AddOpSub_16bit_VHDL
+
+} {} {}} D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/Adder_1bit_VHDL.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/QuartusII/IntelFPGA_lite/20.1/Projects/CPU_16bit/Adder_1bit_VHDL.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Adder_1bit_VHDL
+-- Compiling architecture bhv_adder of Adder_1bit_VHDL
+
+} {} {}}
